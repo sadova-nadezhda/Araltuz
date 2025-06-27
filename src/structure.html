@@ -6,9 +6,56 @@
 
     <main>
       @@include('html/breadcrumbs.html', { "title": "Корпоративная структура" })
-      <section class="structure">
+      <section class="structure control section-hidden">
         <div class="container">
-          <div class="structure__container"></div>
+          <div class="control__container structure__container">
+            <h1 class="control__title up">Корпоративная структура</h1>
+            <div class="structure__img flip"><img src="@img/scheme.png" alt=""></div>
+            <div class="structure__row up">
+              <div class="structure__caption">
+                <img src="@img/pdf.svg" alt="pdf">
+                <span>Корпоративная структура</span>
+              </div>
+              <a href="" class="structure__link" download>Скачать</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="structure-docs section-hidden">
+        <div class="container">
+          <div class="structure-docs__container">
+            <h2 class="structure-docs__title up">Корпоративные документы</h2>
+            <div class="structure-docs__wrap">
+              <div class="structure__row up">
+                <div class="structure__caption">
+                  <img src="@img/pdf.svg" alt="pdf">
+                  <span>Положение о совете директоров</span>
+                </div>
+                <a href="" class="structure__link" download>Скачать</a>
+              </div>
+              <div class="structure__row up">
+                <div class="structure__caption">
+                  <img src="@img/doc.svg" alt="doc">
+                  <span>Положение комитета по аудтиту</span>
+                </div>
+                <a href="" class="structure__link" download>Скачать</a>
+              </div>
+              <div class="structure__row up">
+                <div class="structure__caption">
+                  <img src="@img/doc.svg" alt="doc">
+                  <span>Положение комитета по  назначениям и вознаграждениям</span>
+                </div>
+                <a href="" class="structure__link" download>Скачать</a>
+              </div>
+              <div class="structure__row up">
+                <div class="structure__caption">
+                  <img src="@img/pdf.svg" alt="pdf">
+                  <span>Положение о правлении</span>
+                </div>
+                <a href="" class="structure__link" download>Скачать</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

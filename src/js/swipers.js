@@ -124,6 +124,8 @@ export function swipers() {
     loop: true,
     freeMode: true,
     watchSlidesProgress: true,
+    speed: 800,
+    autoplay: { delay: DEFAULT_DELAY, disableOnInteraction: false },
     breakpoints: {
       768: {
         slidesPerView: 5,
@@ -138,6 +140,8 @@ export function swipers() {
   const aboutSwiper2 = new Swiper(".aboutSwiper2", {
     spaceBetween: 15,
     loop: true,
+    speed: 800,
+    autoplay: { delay: DEFAULT_DELAY, disableOnInteraction: false },
     navigation: {
       nextEl: ".gallery-next",
       prevEl: ".gallery-prev",
