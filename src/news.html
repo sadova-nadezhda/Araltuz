@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Новости" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      @@include('html/breadcrumbs.html', { "title": "Новости" })
+      <section class="post section-hidden">
+        <div class="container">
+          <div class="post__container">
+            <h1 class="post__title">Новости</h1>
+            <div class="post__tabs">
+              <ul class="post__head" data-tabs>
+                <li><a data-tabby-default href="#post-1">Новости</a></li>
+                <li><a href="#post-2">Мероприятия</a></li>
+                <li><a href="#post-3">СМИ о нас</a></li>
+              </ul>
+              <div class="post__contents">
+                <div id="post-1">
+                  <div class="post__cards">
+                    <a class="post__card post-card" href="news-inner.html">
+                      <div class="post-card__img"><img src="@img/news-1.png" alt=""></div>
+                      <div class="post-card__bottom">
+                        <div class="post-card__caption">Официальное заявление АО «Аралтуз»</div>
+                        <div class="post-card__txt">АО «Аралтуз» официально заявляет, что рассылаемая в последнее время в социальных сетях информация не соответствует действительности.</div>
+                        <div class="post-card__date">4 июня 2025</div>
+                      </div>
+                    </a>
+                    <a class="post__card post-card" href="news-inner.html">
+                      <div class="post-card__img"><img src="@img/news-1.png" alt=""></div>
+                      <div class="post-card__bottom">
+                        <div class="post-card__caption">Официальное заявление АО «Аралтуз»</div>
+                        <div class="post-card__txt">АО «Аралтуз» официально заявляет, что рассылаемая в последнее время в социальных сетях информация не соответствует действительности.</div>
+                        <div class="post-card__date">4 июня 2025</div>
+                      </div>
+                    </a>
+                    <a class="post__card post-card" href="news-inner.html">
+                      <div class="post-card__img"><img src="@img/news-1.png" alt=""></div>
+                      <div class="post-card__bottom">
+                        <div class="post-card__caption">Официальное заявление АО «Аралтуз»</div>
+                        <div class="post-card__txt">АО «Аралтуз» официально заявляет, что рассылаемая в последнее время в социальных сетях информация не соответствует действительности.</div>
+                        <div class="post-card__date">4 июня 2025</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div id="post-2">
+                  <div class="post__cards">
+                    <a class="post__card post-card" href="projects-inner.html">
+                      <div class="post-card__img"><img src="@img/news-1.png" alt=""></div>
+                      <div class="post-card__bottom">
+                        <div class="post-card__caption">Официальное заявление АО «Аралтуз»</div>
+                        <div class="post-card__txt">АО «Аралтуз» официально заявляет, что рассылаемая в последнее время в социальных сетях информация не соответствует действительности.</div>
+                        <div class="post-card__date">4 июня 2025</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div id="post-3">
+                  <div class="post__cards">
+                    <a class="post__card post-card" href="projects-inner.html">
+                      <div class="post-card__img"><img src="@img/news-1.png" alt=""></div>
+                      <div class="post-card__bottom">
+                        <div class="post-card__caption">Официальное заявление АО «Аралтуз»</div>
+                        <div class="post-card__txt">АО «Аралтуз» официально заявляет, что рассылаемая в последнее время в социальных сетях информация не соответствует действительности.</div>
+                        <div class="post-card__date">4 июня 2025</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

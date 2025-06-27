@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Стандарты качества" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="breadcrumbs breadcrumbs-light section-hidden">
+        <div class="container">
+          <div class="breadcrumbs__container breadcrumbs-list">
+            <a href="/">Главная</a>
+            <span>Стандарты качества</span>
+          </div>
+        </div>
+      </section>
+      <section class="standards-hero section-top section-hidden">
+        <img src="@img/standards.png" alt="">
+        <div class="container">
+          <div class="standards-hero__container">
+            <h1 class="standards-hero__title">Подтвержденное Качество. Признание по Стандартам ISO, Халал, ЕС и Эко.</h1>
+          </div>
+        </div>
+      </section>
+      <section class="standards">
+        <div class="container">
+          <div class="standards__container">
+            <div class="standards__cards">
+              <div class="standards__card standards-card">
+                <div class="standards-card__name">ISO-сертификация</div>
+                <div class="standards-card__txt">АО «Аралтуз» выпускает соль, соответствующую требованиям международных систем менеджмента качества ISO 9001, ISO 22000 и ISO 50001</div>
+              </div>
+              <div class="standards__card standards-card">
+                <div class="standards-card__name">Соответствие ГОСТ</div>
+                <div class="standards-card__txt">Пищевая соль соответствует стандарту СТ РК ГОСТ Р 51574-2003, техническая — СТ РК 2649-2015 и внутренним стандартам (галит).</div>
+              </div>
+              <div class="standards__card standards-card">
+                <div class="standards-card__name">Лабораторные проверки</div>
+                <div class="standards-card__txt">Качество и безопасность продукции подтверждаются как собственной лабораторией, так и независимыми аккредитованными испытаниями.</div>
+              </div>
+            </div>
+            <div class="standards__tabs">
+              <ul class="standards__type" data-tabs>
+                <li><a data-tabby-default href="#standards-1">ISO</a></li>
+                <li><a href="#standards-2">Халал и Декларация соответствия ЕС</a></li>
+                <li><a href="#standards-3">Эко и Био</a></li>
+              </ul>
+              <div class="standards__content">
+                <div id="standards-1">
+                  <!-- выводить если есть у блока -->
+                  <select name="" class="standards__select">
+                    <option value="">9001:2015</option>
+                    <option value="">22000:2018</option>
+                    <option value="">50001:2018</option>
+                    <option value="">14001:2015</option>
+                    <option value="">45001:2018</option>
+                  </select>
+                  <div class="standards__box">
+                    <div class="standards__top">
+                      <div class="standards__caption">9001:2015</div>
+                      <div class="standards__arrows">
+                        <div class="standards-arrow standards-prev" data-swiper-prev="iso-1">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                          </svg>
+                        </div>
+                        <div class="standards-arrow standards-next" data-swiper-next="iso-1">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="standards__slider">
+                      <div class="swiper standardsSwiper" data-swiper-id="iso-1">
+                        <div class="swiper-wrapper">
+                          <a class="swiper-slide" href="@img/iso-1.jpg" data-fancybox="iso-1"><img src="@img/iso-1.jpg" alt=""></a>
+                          <a class="swiper-slide" href="@img/iso-1.jpg" data-fancybox="iso-1"><img src="@img/iso-1.jpg" alt=""></a>
+                          <a class="swiper-slide" href="@img/iso-1.jpg" data-fancybox="iso-1"><img src="@img/iso-1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="standards-2">
+                  <div class="standards__box">
+                    <div class="standards__top">
+                      <div class="standards__caption">Халал и Декларация соответствия ЕС</div>
+                      <div class="standards__arrows">
+                        <div class="standards-arrow standards-prev" data-swiper-prev="halal">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                          </svg>
+                        </div>
+                        <div class="standards-arrow standards-next" data-swiper-next="halal">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="standards__slider">
+                      <div class="swiper standardsSwiper" data-swiper-id="halal">
+                        <div class="swiper-wrapper">
+                          <a class="swiper-slide" href="@img/halal.jpg" data-fancybox="halal"><img src="@img/halal.jpg" alt=""></a>
+                          <a class="swiper-slide" href="@img/ec-declaration.jpg" data-fancybox="halal"><img src="@img/ec-declaration.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="standards-3">
+                  <div class="standards__box">
+                    <div class="standards__top">
+                      <div class="standards__caption">Эко и Био</div>
+                      <div class="standards__arrows">
+                        <div class="standards-arrow standards-prev" data-swiper-prev="eko">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                          </svg>
+                        </div>
+                        <div class="standards-arrow standards-next" data-swiper-next="eko">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="standards__slider">
+                      <div class="swiper standardsSwiper" data-swiper-id="eko">
+                        <div class="swiper-wrapper">
+                          <a class="swiper-slide" data-fancybox="eko" href="@img/eko-2.jpg"><img src="@img/eko-2.jpg" alt=""></a>
+                          <a class="swiper-slide" data-fancybox="eko" href="@img/eko-2.jpg"><img src="@img/eko-2.jpg" alt=""></a>
+                          <a class="swiper-slide" data-fancybox="eko" href="@img/eko-6.jpg"><img src="@img/eko-6.jpg" alt=""></a>
+                          <a class="swiper-slide" data-fancybox="eko" href="@img/bio-2.jpg"><img src="@img/bio-2.jpg" alt=""></a>
+                          <a class="swiper-slide" data-fancybox="eko" href="@img/bio-3.jpg"><img src="@img/bio-3.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

@@ -1,0 +1,163 @@
+.footer {
+  padding: calc(20 * var(--width-multiplier)) 0;
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: calc(20 * var(--width-multiplier));
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__tile {
+    display: flex;
+    flex-direction: column;
+    gap: calc(12 * var(--width-multiplier));
+    padding: calc(24 * var(--width-multiplier)) calc(20 * var(--width-multiplier));
+    border-radius: calc(8 * var(--width-multiplier));
+    background: var(--white, $white);
+    &_big {
+      grid-column: span 2;
+      padding: calc(20 * var(--width-multiplier));
+      &_inner {
+        display: flex;
+        align-items: center;
+        gap: calc(20 * var(--width-multiplier));
+        @media (max-width: 1024px) {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 1024px) {
+        grid-column: unset;
+      }
+      @media (max-width: 767px) {
+        grid-column: span 2;
+        padding: calc(8 * var(--width-multiplier));
+      }
+    }
+    &_biggest {
+      grid-column: span 6;
+      padding: calc(32 * var(--width-multiplier));
+      @media (max-width: 1024px) {
+        grid-column: span 3;
+      }
+      @media (max-width: 767px) {
+        grid-column: span 2;
+        padding: calc(24 * var(--width-multiplier)) calc(8 * var(--width-multiplier));
+      }
+    }
+    svg {
+      min-width: calc(24 * var(--width-multiplier));
+      width: calc(24 * var(--width-multiplier));
+      height: calc(24 * var(--width-multiplier));
+    }
+    @media (max-width: 767px) {
+      padding: calc(8 * var(--width-multiplier));
+      gap: calc(16 * var(--width-multiplier));
+    }
+  }
+  &__title {
+    color: var(--black, $black);
+    font-size: calc(20 * var(--width-multiplier));
+    font-weight: 600;
+    line-height: 100%;
+    @media (max-width: 767px) {
+      font-size: calc(16 * var(--width-multiplier));
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: calc(12 * var(--width-multiplier));
+  }
+  &__link {
+    color: var(--black-5, $black-5);
+    font-size: calc(16 * var(--width-multiplier));
+    font-weight: 400;
+    line-height: 100%;
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--primary, $primary);
+    }
+    &_biggest {
+      color: var(--black, $black);
+      font-size: 8cqw;
+      font-weight: 700;
+      line-height: 100%;
+      text-decoration: underline;
+      text-align: center;
+      transition: color 0.3s ease;
+      .footer__subtitle {
+        color: var(--black, $black);
+        font-size: calc(16 * var(--width-multiplier));
+        font-weight: 400;
+        line-height: 100%;
+      }
+      &:hover {
+        color: var(--primary, $primary);
+      }
+      @media (max-width: 767px) {
+        font-size: 10cqw;
+      }
+    }
+    @media (max-width: 767px) {
+      font-size: calc(14 * var(--width-multiplier));
+    }
+  }
+  &__tilest-link {
+    padding: calc(12 * var(--width-multiplier)) calc(16 * var(--width-multiplier));
+    display: flex;
+    align-items: center;
+    gap: calc(12 * var(--width-multiplier));
+    min-height: calc(64 * var(--width-multiplier));
+    border-radius: calc(12 * var(--width-multiplier));
+    background: #F9F9F9;
+    width: 100%;
+    transition: scale 0.3s ease;
+    &:hover {
+      scale: 0.97;
+    }
+  }
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(20 * var(--width-multiplier));
+    padding: calc(20 * var(--width-multiplier));
+    border-radius: calc(8 * var(--width-multiplier));
+    background: var(--white, $white);
+    grid-column: span 6;
+    &_l {
+      color: #AAA;
+      font-size: calc(16 * var(--width-multiplier));
+      font-weight: 400;
+      line-height: 120%;
+    }
+    &_r {
+      color: #AAA;
+      font-size: calc(16 * var(--width-multiplier));
+      font-weight: 400;
+      line-height: 100%;
+      a {
+        color: #161616;
+        transition: color 0.3s ease;
+        &:hover {
+          color: var(--primary, $primary);
+        }
+      }
+    }
+    @media (max-width: 1024px) {
+      grid-column: span 3;
+    }
+    @media (max-width: 767px) {
+      grid-column: span 2;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: calc(10 * var(--width-multiplier)) 0;
+  }
+}

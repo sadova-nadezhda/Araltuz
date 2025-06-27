@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Каталог продуктов" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      @@include('html/breadcrumbs.html', { "title": "Каталог продуктов" })
+      <section class="products section-hidden">
+        <div class="container">
+          <div class="products__container">
+            <h1 class="products__title">Каталог продуктов</h1>
+            <form class="products__filters">
+              <select name="" class="products__select">
+                <option value="">Аралтуз</option>
+                <option value="">Славяночка</option>
+                <option value="">OZERO</option>
+              </select>
+              <select name="" class="products__select">
+                <option value="">Пищевая соль</option>
+                <option value="">Кормовая соль</option>
+                <option value="">Техническая соль</option>
+                <option value="">Антилединая соль</option>
+                <option value="">Косметическая соль</option>
+              </select>
+            </form>
+            <div class="products__cards">
+              <a class="products__card products-card" href="products-inner.html">
+                <div class="products-card__top">
+                  <div class="products-card__type">Косметическая</div>
+                  <div class="products-pagination"></div>
+                </div>
+                <div class="products-card__slider">
+                  <div class="swiper productsSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="@img/products-1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="@img/products-2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="@img/products-1.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-card__bottom">
+                  <div class="products-card__caption">Соль пищевая самосадочная йодированная</div>
+                  <ul class="products-card__list">
+                    <li>Аралтуз</li>
+                    <li>Помол №1</li>
+                    <li>Сорт 1.</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="products__card products-card" href="products-inner.html">
+                <div class="products-card__top">
+                  <div class="products-card__type">Косметическая</div>
+                  <div class="products-pagination"></div>
+                </div>
+                <div class="products-card__slider">
+                  <div class="swiper productsSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="@img/products-1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="@img/products-2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="@img/products-1.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-card__bottom">
+                  <div class="products-card__caption">Соль пищевая самосадочная йодированная</div>
+                  <ul class="products-card__list">
+                    <li>Аралтуз</li>
+                    <li>Помол №1</li>
+                    <li>Сорт 1.</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="products__card products-card" href="products-inner.html">
+                <div class="products-card__top">
+                  <div class="products-card__type">Косметическая</div>
+                  <div class="products-pagination"></div>
+                </div>
+                <div class="products-card__slider">
+                  <div class="swiper productsSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="@img/products-1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="@img/products-2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="@img/products-1.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-card__bottom">
+                  <div class="products-card__caption">Соль пищевая самосадочная йодированная</div>
+                  <ul class="products-card__list">
+                    <li>Аралтуз</li>
+                    <li>Помол №1</li>
+                    <li>Сорт 1.</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

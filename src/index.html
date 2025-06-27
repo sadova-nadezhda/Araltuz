@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    @@include('html/header.html')
+
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero-swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                data-title="Природная и экологически чистая соль"
+                data-desc="Экологически чистая соль с натуральным составом и пользой для здоровья."
+              >
+                <div class="container">
+                  <div class="hero-swiper__box">
+                    <h1 class="hero-swiper__title">
+                      Природная и экологически чистая соль
+                    </h1>
+                    <a href="#" class="hero-swiper__link">
+                      <span> Подробнее </span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M15 5V15M15 5H5M15 5L5 15"
+                          stroke="white"
+                          stroke-width="1.66667"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <img src="@img/hero-1.webp" class="hero-swiper__bg" />
+              </div>
+              <div
+                class="swiper-slide"
+                data-title="Производим соль с 1925 года"
+                data-desc="Производим качественную соль с 1925 года — надёжно, проверено временем."
+              >
+                <div class="container">
+                  <div class="hero-swiper__box">
+                    <h2 class="hero-swiper__title">
+                      Производим соль с 1925 года
+                    </h2>
+                    <a href="#" class="hero-swiper__link">
+                      <span> Подробнее </span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M15 5V15M15 5H5M15 5L5 15"
+                          stroke="white"
+                          stroke-width="1.66667"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <img src="@img/hero-2.webp" class="hero-swiper__bg" />
+              </div>
+              <div
+                class="swiper-slide"
+                data-title="Сила природы в каждой кристалле"
+                data-desc="Чистая, натуральная соль с пользой и вкусом от самой природы."
+              >
+                <div class="container">
+                  <div class="hero-swiper__box">
+                    <h2 class="hero-swiper__title">
+                      Сила природы в каждой кристалле
+                    </>
+                    <a href="#" class="hero-swiper__link">
+                      <span> Подробнее </span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M15 5V15M15 5H5M15 5L5 15"
+                          stroke="white"
+                          stroke-width="1.66667"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <video
+                  playsinline
+                  autoplay
+                  muted
+                  loop
+                  preload="metadata"
+                  class="hero-swiper__bgvideo"
+                >
+                  <source src="@img/videos/review.mp4" />
+                </video>
+                <!-- <img src="@img/hero-1.webp" class="hero-swiper__bg" /> -->
+              </div>
+            </div>
+          </div>
+          <div class="hero-swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="title about__title heading" data-id="01">О компании</h2>
+          <div class="about__box">
+            <div class="about__left">
+              <div class="about-l-card">
+                <div class="about-l-card__content">
+                  <div class="about-l-card__title">
+                    АО «Аралтуз» — соль высшего качества с 1925 года
+                  </div>
+                  <div class="about-l-card__desc">
+                    АО «Аралтуз» – ведущий производитель и экспортер соли в
+                    Казахстане с 1925 года. Компания специализируется на добыче,
+                    переработке и поставке пищевой и технической соли. Продукция
+                    «Аралтуз» стала узнаваемым отечественным брендом,
+                    востребованным как в Казахстане, так и в странах СНГ.
+                  </div>
+                  <a href="javascript:" class="about-l-card__link">
+                    Читать подробнее
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="about__right">
+              <div class="about-r-card">
+                <img
+                  src="@img/about-r-card-1.gif"
+                  class="about-r-card__bg"
+                />
+                <div class="about-r-card__inner">
+                  <div class="about-r-card__desc">
+                    АО «Аралтуз» — крупнейший производитель пищевой и
+                    технической соли в Казахстане и Центральной Азии.
+                  </div>
+                </div>
+              </div>
+              <div class="about-r-card">
+                <img
+                  src="@img/about-r-card-2.gif"
+                  class="about-r-card__bg"
+                />
+                <div class="about-r-card__inner">
+                  <div class="about-r-card__desc">
+                    Объём добычи предприятия — 800 000 тонн в год, что укрепляет
+                    его позиции на рынке Казахстана.
+                  </div>
+                </div>
+              </div>
+              <div class="about-r-card">
+                <img
+                  src="@img/about-r-card-3.gif"
+                  class="about-r-card__bg"
+                />
+                <div class="about-r-card__inner">
+                  <div class="about-r-card__desc">
+                    Штат компании насчитывает 1 200 сотрудников, что отражает её
+                    устойчивый масштаб и производственный потенциал.
+                  </div>
+                </div>
+              </div>
+              <div class="about-r-card">
+                <img
+                  src="@img/about-r-card-4.gif"
+                  class="about-r-card__bg"
+                />
+                <div class="about-r-card__inner">
+                  <div class="about-r-card__desc">
+                    ISO 22000 — гарантия качества на международном уровне.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <h2 class="news__title title heading" data-id="02">Новости</h2>
+          <ul data-tabs class="news-tabs">
+            <li><a data-tabby-default href="#news-tab-1"> Новости</a></li>
+            <li><a href="#news-tab-2"> Мероприятия</a></li>
+            <li><a href="#news-tab-3">СМИ о нас</a></li>
+          </ul>
+
+          <div id="news-tab-1">
+            <div class="news__box">
+              <div class="news-l-card">
+                <img
+                  src="@img/news-l-card-1.webp"
+                  class="news-l-card__img"
+                />
+                <div class="news-l-card__box">
+                  <div class="news-l-card__title">
+                    Официальное заявление АО «Аралтуз»
+                  </div>
+                  <div class="news-l-card__desc">
+                    АО «Аралтуз» официально заявляет, что рассылаемая в
+                    последнее время в социальных сетях информация не
+                    соответствует действительности.
+                  </div>
+                </div>
+              </div>
+              <div class="news__right-box">
+                <div class="news-r-card">
+                  <div class="news-r-card__title">
+                    Официальное заявление АО «Аралтуз»
+                  </div>
+                  <div class="news-r-card__desc">
+                    АО «Аралтуз» официально заявляет, что рассылаемая в
+                    последнее время в социальных сетях информация не
+                    соответствует действительности.
+                  </div>
+                </div>
+                <div class="news-r-card">
+                  <div class="news-r-card__title">
+                    Официальное заявление АО «Аралтуз»
+                  </div>
+                  <div class="news-r-card__desc">
+                    АО «Аралтуз» официально заявляет, что рассылаемая в
+                    последнее время в социальных сетях информация не
+                    соответствует действительности.
+                  </div>
+                </div>
+                <div class="news-r-card">
+                  <div class="news-r-card__title">
+                    Официальное заявление АО «Аралтуз»
+                  </div>
+                  <div class="news-r-card__desc">
+                    АО «Аралтуз» официально заявляет, что рассылаемая в
+                    последнее время в социальных сетях информация не
+                    соответствует действительности.
+                  </div>
+                </div>
+                <div class="news-r-card">
+                  <div class="news-r-card__title">
+                    Официальное заявление АО «Аралтуз»
+                  </div>
+                  <div class="news-r-card__desc">
+                    АО «Аралтуз» официально заявляет, что рассылаемая в
+                    последнее время в социальных сетях информация не
+                    соответствует действительности.
+                  </div>
+                </div>
+                <div class="news-r-card">
+                  <div class="news-r-card__title">
+                    Официальное заявление АО «Аралтуз»
+                  </div>
+                  <div class="news-r-card__desc">
+                    АО «Аралтуз» официально заявляет, что рассылаемая в
+                    последнее время в социальных сетях информация не
+                    соответствует действительности.
+                  </div>
+                </div>
+                <a href="#" class="news__link button button_white"
+                  >Показать все новости</a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="news-tab-2"></div>
+          <div id="news-tab-3"></div>
+        </div>
+      </section>
+
+      <section class="cats">
+        <div class="container">
+          <h2 class="cats__title title heading" data-id="03">Категории</h2>
+          <div class="cats__box">
+            <div class="cats-swiper__btn cats-swiper__prev swiper-arrow-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="24"
+                viewBox="0 0 23 24"
+                fill="none"
+              >
+                <path
+                  d="M14.7697 18.4348V5.56543L4.65803 12.0001L14.7697 18.4348Z"
+                  fill="#1D1B20"
+                  fill-opacity="0.3"
+                />
+              </svg>
+            </div>
+            <div class="cats-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="catcard">
+                    <img src="@img/catcard-1.gif" class="catcard__bg" />
+                    <div class="catcard__mark">Пищевая соль</div>
+                    <img src="@img/cat-1.png" class="catcard__promo" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catcard">
+                    <img src="@img/catcard-2.gif" class="catcard__bg" />
+                    <div class="catcard__mark">Косметическая соль</div>
+                    <img src="@img/cat-2.png" class="catcard__promo" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catcard">
+                    <img src="@img/catcard-3.gif" class="catcard__bg" />
+                    <div class="catcard__mark">Кормовая соль</div>
+                    <img src="@img/cat-3.png" class="catcard__promo" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catcard">
+                    <img src="@img/catcard-4.gif" class="catcard__bg" />
+                    <div class="catcard__mark">Антилёд</div>
+                    <img src="@img/cat-4.png" class="catcard__promo" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catcard">
+                    <img src="@img/catcard-5.gif" class="catcard__bg" />
+                    <div class="catcard__mark">Антилёд</div>
+                    <img src="@img/cat-5.png" class="catcard__promo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cats-swiper__btn cats-swiper__next swiper-arrow-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="24"
+                viewBox="0 0 23 24"
+                fill="none"
+              >
+                <path
+                  d="M7.8457 18.4348V5.56543L17.9573 12.0001L7.8457 18.4348Z"
+                  fill="#1D1B20"
+                  fill-opacity="0.3"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/modal.html') 
+    @@include('html/foot.html')
+  </body>
+</html>
